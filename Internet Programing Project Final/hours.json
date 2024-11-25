@@ -1,0 +1,12 @@
+{
+    "hours": [
+      {"day": "Saturday", "hours": "11a.m.-11p.m."},
+      {"day": "Sunday", "hours": "11a.m.-10p.m."},
+      {"day": "Monday", "hours": "11a.m.-10p.m."},
+      {"day": "Tuesday", "hours": "11a.m.-10p.m."},
+      {"day": "Wednesday", "hours": "11a.m.-10p.m."},
+      {"day": "Thursday", "hours": "11a.m.-10p.m."},
+      {"day": "Friday", "hours": "10a.m.-11p.m."},
+      {"note": "*Holiday Hours May Differ"}
+    ]
+}

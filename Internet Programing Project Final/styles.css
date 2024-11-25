@@ -1,0 +1,465 @@
+
+/* standerdizes all tags  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* puts background image and background color for body tag  */
+body {
+    background-image: url("https://ik.imagekit.io/munchery/blog/tr:w-768/the-3-classes-of-french-cuisine-haute-cuisine-provincial-cuisine-and-nouvelle-cuisine.jpeg");
+    background-repeat: no-repeat;
+    background-color: #F7F5F2; 
+    background-size: 100%;
+}
+
+/* sets the witdh for the main tag and the margin  */
+main {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: -500px;
+}
+
+/* cusomizes the resturant slogan on top of the page  */
+.advertisement {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+    color: #1E3A5F;
+    width: 20%;
+}
+
+/* white space to party cover the image when the website gros in size */
+.whiteSpace {
+    background-color: #F7F5F2;
+    height: 500px;
+    margin-top: 450px;
+}
+
+/* customizes header tag with backroudn color and color  */
+header {
+    background-color: rgba(123, 141, 164, 0.35); 
+    color: #F7F5F2; 
+    overflow: hidden;
+}
+
+/* makes resturant name float to the left  */
+header h1 {
+    float: left;
+    text-shadow: #f9f9f9 1px 3px 5px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+/* makes nav float to the right  */
+header nav {
+    float: right;
+    margin-top: 9px;
+}
+
+/* puts space in between header nav a elements and sets transition time */
+header a {
+    color: #F7F5F2;
+    margin: 15px;
+    transition: color 0.5s;
+}
+
+.history h2 {
+    color: #3D405B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* puts the history list in the center  */
+.history-list {
+    text-align: center;
+}
+
+/* formats history list item to be next to eachother and sizeing and padding/margin  */
+.history-list li {
+    display: inline-block;
+    vertical-align: top;
+    height: 460px;
+    width: 300px;
+    padding: 10px;
+
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+/* formats image to be proper size  */
+.history-list img {
+    width:100%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+/* formats text under the image in histroy  */
+.history-list p {
+    text-align: justify;
+    text-indent: 15px;
+    padding: 13px;
+    color: #3D405B;
+    line-height: 23px;
+
+}
+
+/* seperator line which is black and goes accross the screen  */
+.seperatorLine {
+    margin: 50px 0;
+    height: 1px;
+    width: 1559px;
+    margin-left: -300px;
+    background-color: #3D405B;
+}
+
+
+.reviews h2 {
+    color: #3D405B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* centers the review list  */
+.review-list {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* puts the reviw list items next to eachother and sets border, padding and margin  */
+.review-list li {
+    display: inline-block;
+    vertical-align: top;
+    height: 270px;
+    width: 300px;
+    padding: 10px;
+    background-color: #f4f0ec;
+    color: #3d405b;
+    border: 1px solid #6b615a; 
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+/* formats image to be right size  */
+.review-list img {
+    width:110px;
+    height: 110px;
+    border-radius: 200px;
+    margin: 10px;
+}
+
+/* formats paragraph tags in the review list  */
+.review-list p {
+    text-align: center;
+    text-indent: 15px;
+    padding: 8px;
+}
+
+.MapAndHours {
+    text-align: center;
+    margin: 50px;
+}
+
+/* sets the size and border of the map and makes it to the left  */
+.locationMap {
+    width: 700px;
+    height: 390px;
+    border-radius: 20px;
+    border: 1px solid black;
+    float: left;
+}
+
+/* rounds teh corners of the map  */
+iframe {
+    border-radius: 20px;
+}
+
+.locationMap h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* formats opening hours section look and color */
+.openHours {
+    border: 1px solid #6b615a; 
+    background-color: #f4f0ec;
+    width: 250px;
+    height: 420px;
+    color: #3d405b;
+    border-radius: 30px;
+    float: right;
+}
+
+.openHours h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.openHours li{
+    margin: 25px;
+}
+
+/* make the 8th list item smaller and larger margin  */
+.openHours li:nth-child(8){
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.weather {
+    margin: 0 auto;
+    margin-top: 480px;
+    margin-bottom: -480px;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #6b615a; 
+    background-color: #f4f0ec;
+    width: fit-content;
+
+}
+/* formats the footer size and color  */
+footer {
+    overflow: hidden;
+    min-width: 1250px;
+    margin-top: 500px;
+    background-color: rgba(123, 141, 164, 0.35);
+    color: #F7F5F2;
+    height: 240px;
+    position: relative;
+}
+
+/* the contact info float to the left with margin  */
+.contact-infoContainer {
+    float: left;
+    margin-left: 15%;
+}
+
+footer h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+
+/* formats footer imaage margin and size  */
+footer img {
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 200px;
+    
+}
+
+
+.contact-info {
+    background-color:  #9b9a99;
+    border-radius: 6px;
+    width: 370px;
+} 
+
+.contact-info li {
+    padding: 10px;
+} 
+
+
+/* flosts the quick access to the right with margin  */
+.quick-access {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15%;
+}
+
+.quick-access li {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* sets color and transition tiem  */
+.quick-access a {
+    color: #F7F5F2;
+    transition: color 0.5s;
+}
+
+/* puts the copyright statement in the middle and bottom of the page and dose teh sizing  */
+footer p {
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+/* when hover on a element change the color  */
+a:hover {
+    color: #3D405B;
+}
+
+/* formats the display of all the food items  */
+.food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+.name-and-cost {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3D405B;
+    margin-bottom: 10px;
+}
+
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* sets width and height of indivual food item and transition  */
+.food-item {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #6b615a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #3D405B;
+    text-align: center;
+    transition: box-shadow 0.5s, border-color 0.5s;
+}
+
+/* makes the image fit in the div and makes the image circular  */
+.food-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* when hovering on food item photo change the boder and add box shadow  */
+.food-item:hover {
+    border-color: white; 
+    box-shadow: 0 0 15px rgba(130, 128, 128, 0.8);
+}
+
+/* formats the oder form  */
+.order-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* add border and colors and sizing to both forms to maintain consitency  */
+.order-details,
+.order-summary {
+    border: 1px solid #6b615a;
+    border-radius: 10px;
+    padding: 8px;
+    width: 45%;
+    background-color: #f4f0ec;
+  
+}
+
+/* formats the large sized inputs  */
+.Big-Input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #6b615a;
+    background-color: #f4f0ec;
+}
+
+/* formats the small sized inputs  */
+.Small-Input {
+    width: 50%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #6b615a;
+    background-color: #f4f0ec;
+    float: right;
+}
+
+/* formats the text areas with size and color  */
+.order-details textarea {
+    width: 200px; 
+    height: 125px;
+    resize: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #6b615a;
+    background-color: #f4f0ec;
+    float: left;
+}
+
+/* formats the big text areas with size and color  */
+.Big-Text-Area {
+    width: 100%; 
+    height: 130px;
+    resize: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #6b615a;
+    background-color: #f4f0ec;
+}
+
+/* formats the small text areas with size and color  */
+.Small-Text-Area {
+    width: 200px; 
+    height: 112px;
+    resize: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #6b615a;
+    background-color: #f4f0ec;
+    float: left;
+}
+
+/* formats the input for the order summary form  */
+.order-summary input {
+    width: 50%;
+    height: 60px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #6b615a;
+    background-color: #f4f0ec;
+    float: right;
+}
+
+/* formats both button on both forms to maintain consitency  */
+.order-details button,
+.order-summary button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3D405B;
+    color: #F7F5F2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+}
+
+/* when hover on button in form change the color  */
+.order-details button:hover,
+.order-summary button:hover {
+    background-color: #6b615a;
+}
