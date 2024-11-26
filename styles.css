@@ -21,7 +21,7 @@ body {
 main {
     width: 1000px;
     margin: 0 auto;
-    margin-top: -500px;
+    margin-top: -700px;
 }
 
 /* cusomizes the resturant slogan on top of the page  */
@@ -36,7 +36,7 @@ main {
 /* white space to party cover the image when the website gros in size */
 .whiteSpace {
     background-color: #F7F5F2;
-    height: 500px;
+    height: 750px;
     margin-top: 450px;
 }
 
@@ -213,6 +213,7 @@ iframe {
     font-size: 12px;
 }
 
+/* this sets the size and look (color/boredr) of the weather section */
 .weather {
     margin: 0 auto;
     margin-top: 480px;
@@ -225,6 +226,7 @@ iframe {
     width: fit-content;
 
 }
+
 /* formats the footer size and color  */
 footer {
     overflow: hidden;
