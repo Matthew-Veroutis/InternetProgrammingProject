@@ -174,21 +174,21 @@ document.querySelector('.confirm-received').addEventListener('click', function (
     // enables the order from so you can submit another prder
     toggleForm(false);
 
-    //allerts teh user that the order was confrimed as recived and thanks them 
+    //allerts the user that the order was confrimed as recived and thanks them 
     alert('Order confirmed as received. Thank you!');
 });
 
 //when the window loads put the cookie on the summary form 
 window.onload = function () {
 
-    // makes an array by splitting the data by ";"
-    const cookies = document.cookie.split(';');
-    //cut out the first part which is the "orderDetails="
-    const orderCookie = cookies.find(cookie => cookie.trim().startsWith('orderDetails='));
+    // makes gets the cooke as a astring and cuts at white space at the end and begining
+    const orderCookie = document.cookie.trim();
 
-    //if the order cookie exists do the follwoing 
-    if (orderCookie) {
-        // further split the cookie to get instevisual data 
+
+    //if the order cookie exists and the cookie starts with "orderDetails=" do the follwoing 
+    if (orderCookie.startsWith("orderDetails=")) {
+        // first splits the the data based on "=" into and array and then is olny takes whats to the right of the equals and splits it base on "|"
+        //and assigns that value to the order dedails as an array
         const orderDetails = orderCookie.split('=')[1].split('|');
         
         //if the order is recived it dose not put any data on the summary form and returns 
