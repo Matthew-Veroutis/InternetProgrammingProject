@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             data.hours.forEach(item => {
                 //creates a new list item
                 const li = document.createElement('li');
-                // if the item is the small not on the botton it fomats it diffrently
+                // if the item is the small note on the botton it fomats it diffrently
                 if (item.note) {
                     li.textContent = item.note;
                     li.style.textAlign = 'center'; 
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const dayElement = document.createElement('div');
                     const timeElement = document.createElement('div');
                     
+                    //makes the inside text of the day/time element the data from the json file
                     dayElement.textContent = item.day;
                     timeElement.textContent = item.hours;
                     
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
 });
 
-//when the document is loaded get the weather from teh api 
+//when the document is loaded get the weather from the api 
 document.addEventListener('DOMContentLoaded', () => {
     // the link of the weather api
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Pointe-Claire&appid=0e92e3d5382b25a3fd5bcf8a7be07e7e&units=metric`;
@@ -67,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
             var data = JSON.parse(xhr.responseText);
 
             // get the weather information and puts it into constants
-            const weatherDescription = data.weather[0].description;
             const temperature = data.main.temp;
 
             // the display string which has the current tempeartur in pointe clare where the resturnat is
@@ -127,7 +127,7 @@ document.querySelector('.place-order').addEventListener('click', function () {
     }
 
     //if the quantity is not a number or less than 0 or more than 100 it warns the user that the input is invalid 
-    if (isNaN(quantity) || quantity <= 0 || quantity > 100) {
+    if (isNaN(quantity) || quantity <= 0 || quantity >= 100) {
         alert('Quantity must be a valid positive number and order must be 100 or less quantity.');
         return;
     }
@@ -146,7 +146,7 @@ document.querySelector('.place-order').addEventListener('click', function () {
     const orderData = `${customerName}|${phoneNumber}|${address}|${foodDetails}|${quantity}|${formattedTime}`;
     document.cookie = `orderDetails=${orderData}`;
 
-    // it clears the from and makes the order from disabled since you already have a pending order
+    // it clears the from and makes the order form and disables it since you already have a pending order
     clearForm();
     toggleForm(true);
 
@@ -168,7 +168,8 @@ document.querySelector('.confirm-received').addEventListener('click', function (
     document.querySelector('.summary-food-details').value = '';
     document.querySelector('.delivery-time').value = '';
 
-    //it also gets rid of the cookie so when you reload it it dose not place the previous recived order
+    //it also gets rid of the cookie by settign it to OrderRecivedStatus,
+    // so when you reload it it dose not place the previous recived order
     document.cookie = "orderDetails=OrderRecivedStatus";
 
     // enables the order from so you can submit another prder
@@ -191,7 +192,7 @@ window.onload = function () {
         //and assigns that value to the order dedails as an array
         const orderDetails = orderCookie.split('=')[1].split('|');
         
-        //if the order is recived it dose not put any data on the summary form and returns 
+        //if the order is recived it return so the pending order form is left blank 
         if (orderDetails[0] == "OrderRecivedStatus") {
             return;
         }
@@ -208,6 +209,7 @@ window.onload = function () {
 
 
 // when you click on the image it puts the name and price on the order form 
+//this is for all of the following
 document.getElementById('filet-mignon').addEventListener('click', function () {
     document.querySelector('.food-details').value = 'Filet Mignon - $40';
 });

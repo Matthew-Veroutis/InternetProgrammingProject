@@ -3,15 +3,19 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <!-- sets the title and icon in the tab -->
+    <title>Order Page</title>
+    <link rel="icon" href="images/Screenshot_2024-11-12_001231-removebg-preview.png" type="image/png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- links the css file -->
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <!-- header which contains name of resturnat and the nav to go to other pages -->
     <header>
+        <!-- name of resturant -->
         <h1>Veroutis's Fine Cuisine</h1>
+        <!-- the nav with the ability to navigate to home or order page -->
         <nav>
             <a href="index.html">Home</a>
             <a href="order.html">Order</a>
@@ -23,20 +27,25 @@
 
 
     <main>
-        <!-- header on the top of the page  -->
+        <!-- header on the top of the page with big text -->
         <h2 style="margin-top: -1200px; text-align: center;">All our amazing food</h2>
+        <!-- instruntions upon how to order -->
         <h3 style="text-align: center;">To add item to order, click on the food item image</h3>
         <h4 style="text-align: center;">Maxiuim one type of plate per order, with quantity up to 100</h4>
+        <h5 style="text-align: center;">New orders can olny be placed if their is no pending orders, to confirm pending order click "Confirm Received"</h5>
         
         
 
         <!-- div conatains all of the food items with an image and name and price  -->
         <div class="food-items">
 
-            <!-- each div has the individual food with the associated name price and imag  -->
+            <!-- each div has the individual food with the associated name price and imae  -->
+            <!-- this is the same for the following 6 divs -->
             <div class="food-container">
+                <!-- the name and cost of the food -->
                 <div class="name-and-cost">Filet Mignon - $40</div>
                 <div class="food-item">
+                    <!-- the image of the food with an id -->
                     <img src="images/Filet-Mignon.webp" id="filet-mignon">
                 </div>
             </div>
@@ -94,22 +103,32 @@
         <section class="order-form">
             <div class="order-details">
                 <!-- form has a input area for name of customer, phone number, address, name and cost of food, quantity and credit card number  -->
-                 <!-- also had a submit button to submit the form  -->
+                <!-- also had a submit button to submit the form  -->
                 <form>
+                    <!-- text box to put your name -->
                     <input type="text" class="customer-name Big-Input" placeholder="Name" required>
+                    <!-- test box to put your phone number -->
                     <input type="text" class="phone-number Big-Input" placeholder="Your Phone Number" required>
+                    <!-- text box to put you address -->
                     <input type="text" class="address Big-Input" placeholder="Your Address" required>
+                    <!-- text box which will be assigned value after click on a food item image -->
                     <textarea class="food-details Big-Input" placeholder="Name and Cost of Food" readonly></textarea>
+                    <!-- text box for the quanity of food you want -->
                     <input type="text" class="quantity Small-Input" placeholder="Quantity" required>
+                    <!-- text box for your credit card number -->
                     <input type="text" class="credit-card Small-Input" placeholder="Your Credit Card Number" required>
+                    <!-- the button to place your order -->
                     <button type="button" class="place-order">Place Order</button>
                 </form>
             </div>
 
             <!-- after customer submits order oder details will be conatined in this area such as order details, name and cost of food and expected time of arrival  -->
             <div class="order-summary">
+                <!-- the text area which has details of order such as name of person, phone number, address, quanitity-->
                 <textarea class="order-summary-details Big-Text-Area" placeholder="Order Details" readonly></textarea>
+                <!-- the name and cost of food -->
                 <textarea class="summary-food-details Small-Text-Area" placeholder="Name and Cost of Food" readonly></textarea>
+                <!-- the expected delivery time off food -->
                 <input type="text" class="delivery-time" placeholder="Expected Time of Arrival" readonly>
                 <!-- when customer revices order they can press codirm recive button  -->
                 <button class="confirm-received">Confirm Received</button>
@@ -124,6 +143,7 @@
         <!-- contact info which has phone number email address instagram and facebook  -->
         <section class="contact-infoContainer">
         <h1>Contact Info:</h1>
+            <!-- conatct info such as phone number email address, instagram, facebook -->
             <ul class="contact-info">
                 <li>Phone Number: 514-888-9999</li>
                 <li>Email Address: VeroutisCusine@restaurant.com</li>
@@ -148,6 +168,7 @@
         <p>Copyright Matthew Veroutis</p>
     </footer>
 
+    <!-- links the javascript file at the end -->
     <script src="script.js"></script>
 </body>
 </html>

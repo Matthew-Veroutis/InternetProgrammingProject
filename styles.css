@@ -68,6 +68,7 @@ header a {
     transition: color 0.5s;
 }
 
+/* formats the year for the "our rich history" Area */
 .history h2 {
     color: #3D405B;
     margin-top: 10px;
@@ -87,7 +88,6 @@ header a {
     height: 460px;
     width: 300px;
     padding: 10px;
-
     margin-left: 10px;
     border-radius: 10px;
 }
@@ -117,8 +117,7 @@ header a {
     margin-left: -300px;
     background-color: #3D405B;
 }
-
-
+/* formats the names of the reviewers  */
 .reviews h2 {
     color: #3D405B;
     margin-top: 10px;
@@ -161,6 +160,7 @@ header a {
     padding: 8px;
 }
 
+/* formats maps and hours div to add margin and put in the center  */
 .MapAndHours {
     text-align: center;
     margin: 50px;
@@ -180,6 +180,7 @@ iframe {
     border-radius: 20px;
 }
 
+/* formats the address putting it intp the center and size 2-*/
 .locationMap h2 {
     text-align: center;
     font-size: 20px;
@@ -196,12 +197,13 @@ iframe {
     float: right;
 }
 
+/* formats opeinging hours header */
 .openHours h2 {
     text-align: center;
     margin-top: 10px;
 }
 
-
+/* puts margin in between li in opeing hours */
 .openHours li{
     margin: 25px;
 }
@@ -244,6 +246,7 @@ footer {
     margin-left: 15%;
 }
 
+/* formats footer h1 */
 footer h1 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -259,13 +262,14 @@ footer img {
     
 }
 
-
+/* puts backorund color and sizing for contact info div */
 .contact-info {
     background-color:  #9b9a99;
     border-radius: 6px;
     width: 370px;
 } 
 
+/* adds padding to contact info li */
 .contact-info li {
     padding: 10px;
 } 
@@ -278,6 +282,7 @@ footer img {
     margin-right: 15%;
 }
 
+/* formats the quick acces li */
 .quick-access li {
     text-align: center;
     margin-bottom: 20px;
@@ -314,6 +319,7 @@ a:hover {
     text-align: center;
 }
 
+/* formats name and cost of food */
 .name-and-cost {
     font-size: 16px;
     font-weight: 600;
@@ -321,6 +327,7 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* display each food item in flex so it can easly be placed on page*/
 .food-items {
     display: flex;
     flex-wrap: wrap;
