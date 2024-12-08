@@ -163,6 +163,16 @@ function clearForm() {
 
 // when the confirmed recived button was clicked 
 document.querySelector('.confirm-received').addEventListener('click', function () {
+    // Get the values from the form text areas
+    const orderSummary = document.querySelector('.order-summary-details').value;
+    const foodDetails = document.querySelector('.summary-food-details').value;
+    const deliveryTime = document.querySelector('.delivery-time').value;
+
+    // if any are empty return so you do not display any message for user
+    if (orderSummary === '' || foodDetails === '' || deliveryTime === '') {
+        return; 
+    }
+
     // clears all the infromation on the order summary form
     document.querySelector('.order-summary-details').value = '';
     document.querySelector('.summary-food-details').value = '';
@@ -209,36 +219,35 @@ window.onload = function () {
 
 
 // when you click on the image it puts the name and price on the order form 
-//this is for all of the following
-document.getElementById('filet-mignon').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Filet Mignon - $40';
+//this is for all of the following, this also uses jquery
+$('#filet-mignon').click(function() {
+    $('.food-details').val('Filet Mignon - $40');
 });
 
-document.getElementById('lobster-tails').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Lobster Tails - $50';
+$('#lobster-tails').click(function() {
+    $('.food-details').val('Lobster Tails - $50');
 });
 
-document.getElementById('lamb-chops').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Lamb Chops - $35';
+$('#lamb-chops').click(function() {
+    $('.food-details').val('Lamb Chops - $35');
 });
 
-document.getElementById('cheese-burger').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Cheese Burger - $25';
+$('#cheese-burger').click(function() {
+    $('.food-details').val('Cheese Burger - $25');
 });
 
-document.getElementById('salmon').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Salmon - $28';
+$('#salmon').click(function() {
+    $('.food-details').val('Salmon - $28');
 });
 
-document.getElementById('duck-legs').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Duck Legs - $32';
+$('#duck-legs').click(function() {
+    $('.food-details').val('Duck Legs - $32');
 });
 
-document.getElementById('spaghetti').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Spaghetti - $24';
+$('#spaghetti').click(function() {
+    $('.food-details').val('Spaghetti - $24');
 });
 
-document.getElementById('salad').addEventListener('click', function () {
-    document.querySelector('.food-details').value = 'Salad - $22';
+$('#salad').click(function() {
+    $('.food-details').val('Salad - $22');
 });
-
